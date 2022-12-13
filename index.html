@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Project Name</title>
+     <title>DOM Play</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/forms.css">
+  <style>
+    .hamlet{
+      /*background-color: yellow; */
+    }
+
+    #play span{
+      /* background-color: blue; */
+    }
+
+  </style>
  </head>
  <body>
      <header>
-     <h1 class="page-header">Site Name</h1>
+     <h1 class="page-header">DOM Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="#">Link</a>
@@ -22,9 +32,18 @@
      </header>
      
    <main class="wrapper">
-       <h2 class="subheader">Project Name</h2>
+      <h2 class="subheader">Click on an actors line to highlight all of their parts</h2>
+      <div id="play">
+      <p><span data-actor="gordon">Gordon: Where is he?</span></p>
+      <p><span data-actor="joker">Joker: Depending on the time he may be in one spot or several</span></p>
+      <p><span data-actor="batman">Batman: Why do you want to kill me?</span></p>
+      <p><span data-actor="joker">Joker: I don't want to kill you, you complete me</span></p>
+      <p><span data-actor="batman">Batman: WHERE ARE THEY?!</span></p>
+      <p><span data-actor="batman">Batman: WHERE IS RACHEL?!</span></p>
+      <p><span data-actor="gordon">Gordon: He's the hero gotham deserves, but not the one it needs right now</span></p>
 
-       <p>Clever Content goes here</p>
+    </div>
+
      <footer>
       <p><small>&copy; 2021-<span id="this-year"></span> by 
           Jose Alejandre, All Rights Reserved ~ 
